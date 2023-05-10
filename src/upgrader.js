@@ -212,7 +212,7 @@ const upgrade = (inputPath, outputPath) => {
     }
 }
 
-const [input, output] = process.argv.slice(2)
+let [input, output] = process.argv.slice(2)
 if (input == undefined) {
     console.error("err, please specify input file.")
     return
