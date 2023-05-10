@@ -1,0 +1,423 @@
+{
+    "skeleton": {
+        "hash": "3IGZQDMssslKoZFd4U7hBE8dN58",
+        "spine": "3.8.99",
+        "images": "../../imagine/",
+        "audio": ""
+    },
+    "bones": [
+        {
+            "name": "root"
+        },
+        {
+            "name": "anniu",
+            "parent": "root"
+        },
+        {
+            "name": "back",
+            "parent": "anniu",
+            "y": -10.5
+        },
+        {
+            "name": "jiantou",
+            "parent": "anniu",
+            "x": -333.92,
+            "y": -7.7
+        },
+        {
+            "name": "light",
+            "parent": "anniu",
+            "x": 218.79,
+            "scaleX": 1.746,
+            "scaleY": 1.746
+        }
+    ],
+    "slots": [
+        {
+            "name": "back",
+            "bone": "back"
+        },
+        {
+            "name": "jiancai",
+            "bone": "anniu",
+            "attachment": "jiancai"
+        },
+        {
+            "name": "jiantou",
+            "bone": "jiantou"
+        },
+        {
+            "name": "light",
+            "bone": "light",
+            "blend": "additive"
+        },
+        {
+            "name": "unity/beilu/sucai/lh",
+            "bone": "anniu",
+            "attachment": "unity/beilu/sucai/lh"
+        }
+    ],
+    "skins": [
+        {
+            "name": "default",
+            "attachments": {
+                "back": {
+                    "unity/beilu/sucai/dt": {
+                        "width": 632,
+                        "height": 89
+                    },
+                    "unity/beilu/sucai/dt_2": {
+                        "width": 632,
+                        "height": 89
+                    },
+                    "unity/beilu/sucai/dt_3": {
+                        "width": 632,
+                        "height": 89
+                    },
+                    "unity/beilu/sucai/dt_4": {
+                        "width": 632,
+                        "height": 89
+                    }
+                },
+                "jiancai": {
+                    "jiancai": {
+                        "type": "clipping",
+                        "end": "light",
+                        "vertexCount": 12,
+                        "vertices": [
+                            -307.99,
+                            29.07,
+                            -303.51,
+                            31.56,
+                            299.48,
+                            31.31,
+                            305.2,
+                            28.82,
+                            309.76,
+                            23.84,
+                            309.51,
+                            -35.92,
+                            306.2,
+                            -40.65,
+                            300.97,
+                            -44.39,
+                            -304.01,
+                            -44.25,
+                            -308.99,
+                            -41.76,
+                            -311.98,
+                            -36.78,
+                            -311.98,
+                            22.73
+                        ],
+                        "color": "ce3a3aff"
+                    }
+                },
+                "jiantou": {
+                    "unity/beilu/sucai/jt": {
+                        "width": 500,
+                        "height": 82
+                    },
+                    "unity/beilu/sucai/jt_2": {
+                        "width": 500,
+                        "height": 82
+                    },
+                    "unity/beilu/sucai/jt_3": {
+                        "width": 500,
+                        "height": 82
+                    },
+                    "unity/beilu/sucai/jt_4": {
+                        "width": 500,
+                        "height": 82
+                    }
+                },
+                "light": {
+                    "unity/heiquan": {
+                        "scaleX": 5.274,
+                        "scaleY": 5.274,
+                        "width": 128,
+                        "height": 128
+                    }
+                },
+                "unity/beilu/sucai/lh": {
+                    "unity/beilu/sucai/lh": {
+                        "x": -237.3,
+                        "y": 1.4,
+                        "width": 104,
+                        "height": 102
+                    }
+                }
+            }
+        }
+    ],
+    "animations": {
+        "anniu1": {
+            "slots": {
+                "back": {
+                    "attachment": [
+                        {
+                            "name": "unity/beilu/sucai/dt"
+                        }
+                    ]
+                },
+                "jiantou": {
+                    "attachment": [
+                        {
+                            "name": "unity/beilu/sucai/jt"
+                        }
+                    ]
+                },
+                "light": {
+                    "color": [
+                        {
+                            "time": 0.1667,
+                            "color": "ffffffff"
+                        },
+                        {
+                            "time": 1.6333,
+                            "color": "ffffff00"
+                        }
+                    ],
+                    "attachment": [
+                        {
+                            "time": 0.1667,
+                            "name": "unity/heiquan"
+                        }
+                    ]
+                }
+            },
+            "bones": {
+                "jiantou": {
+                    "translate": [
+                        {
+                            "x": 0,
+                            "y": 0,
+                            "curve": 0.25,
+                            "c4": 0.63
+                        },
+                        {
+                            "time": 0.2333,
+                            "x": 869.03,
+                            "y": 0,
+                            "curve": "stepped"
+                        },
+                        {
+                            "time": 1,
+                            "x": -228.73,
+                            "y": 0,
+                            "curve": 0,
+                            "c2": 0.7,
+                            "c3": 0.341
+                        },
+                        {
+                            "time": 2.6667,
+                            "x": 0,
+                            "y": 0
+                        }
+                    ]
+                }
+            }
+        },
+        "anniu2": {
+            "slots": {
+                "back": {
+                    "attachment": [
+                        {
+                            "name": "unity/beilu/sucai/dt_2"
+                        }
+                    ]
+                },
+                "jiantou": {
+                    "attachment": [
+                        {
+                            "name": "unity/beilu/sucai/jt_2"
+                        }
+                    ]
+                },
+                "light": {
+                    "color": [
+                        {
+                            "time": 0.1667,
+                            "color": "ffffffff"
+                        },
+                        {
+                            "time": 1.6333,
+                            "color": "ffffff00"
+                        }
+                    ],
+                    "attachment": [
+                        {
+                            "time": 0.1667,
+                            "name": "unity/heiquan"
+                        }
+                    ]
+                }
+            },
+            "bones": {
+                "jiantou": {
+                    "translate": [
+                        {
+                            "x": 0,
+                            "y": 0,
+                            "curve": 0.25,
+                            "c4": 0.63
+                        },
+                        {
+                            "time": 0.2333,
+                            "x": 869.03,
+                            "y": 0,
+                            "curve": "stepped"
+                        },
+                        {
+                            "time": 1,
+                            "x": -228.73,
+                            "y": 0,
+                            "curve": 0,
+                            "c2": 0.7,
+                            "c3": 0.341
+                        },
+                        {
+                            "time": 2.6667,
+                            "x": 0,
+                            "y": 0
+                        }
+                    ]
+                }
+            }
+        },
+        "anniu3": {
+            "slots": {
+                "back": {
+                    "attachment": [
+                        {
+                            "name": "unity/beilu/sucai/dt_3"
+                        }
+                    ]
+                },
+                "jiantou": {
+                    "attachment": [
+                        {
+                            "name": "unity/beilu/sucai/jt_3"
+                        }
+                    ]
+                },
+                "light": {
+                    "color": [
+                        {
+                            "time": 0.1667,
+                            "color": "ffffffff"
+                        },
+                        {
+                            "time": 1.6333,
+                            "color": "ffffff00"
+                        }
+                    ],
+                    "attachment": [
+                        {
+                            "time": 0.1667,
+                            "name": "unity/heiquan"
+                        }
+                    ]
+                }
+            },
+            "bones": {
+                "jiantou": {
+                    "translate": [
+                        {
+                            "x": 0,
+                            "y": 0,
+                            "curve": 0.25,
+                            "c4": 0.63
+                        },
+                        {
+                            "time": 0.2333,
+                            "x": 869.03,
+                            "y": 0,
+                            "curve": "stepped"
+                        },
+                        {
+                            "time": 1,
+                            "x": -228.73,
+                            "y": 0,
+                            "curve": 0,
+                            "c2": 0.7,
+                            "c3": 0.341
+                        },
+                        {
+                            "time": 2.6667,
+                            "x": 0,
+                            "y": 0
+                        }
+                    ]
+                }
+            }
+        },
+        "anniu4": {
+            "slots": {
+                "back": {
+                    "attachment": [
+                        {
+                            "name": "unity/beilu/sucai/dt_4"
+                        }
+                    ]
+                },
+                "jiantou": {
+                    "attachment": [
+                        {
+                            "name": "unity/beilu/sucai/jt_4"
+                        }
+                    ]
+                },
+                "light": {
+                    "color": [
+                        {
+                            "time": 0.1667,
+                            "color": "ffffffff"
+                        },
+                        {
+                            "time": 1.6333,
+                            "color": "ffffff00"
+                        }
+                    ],
+                    "attachment": [
+                        {
+                            "time": 0.1667,
+                            "name": "unity/heiquan"
+                        }
+                    ]
+                }
+            },
+            "bones": {
+                "jiantou": {
+                    "translate": [
+                        {
+                            "x": 0,
+                            "y": 0,
+                            "curve": 0.25,
+                            "c4": 0.63
+                        },
+                        {
+                            "time": 0.2333,
+                            "x": 869.03,
+                            "y": 0,
+                            "curve": "stepped"
+                        },
+                        {
+                            "time": 1,
+                            "x": -228.73,
+                            "y": 0,
+                            "curve": 0,
+                            "c2": 0.7,
+                            "c3": 0.341
+                        },
+                        {
+                            "time": 2.6667,
+                            "x": 0,
+                            "y": 0
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}
