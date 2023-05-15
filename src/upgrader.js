@@ -198,8 +198,9 @@ const upgrade = (inputPath, outputPath) => {
                if (fs.lstatSync(path1).isDirectory()) {
                     listFiles(path1)
                } else if (file.endsWith(".json")) {
-                    const atlasPath = path1.substring(0, path1.length - 5) + ".atlas.txt";
-                    if (fs.existsSync(atlasPath)) {
+                    const atlasPath = path1.substring(0, path1.length - 5) + ".atlas";
+                    const atlasPath2 = `${atlasPath}.txt`;
+                    if (fs.existsSync(atlasPath) || fs.existsSync(atlasPath2)) {
                         // console.log(path1)
                         const info = JSON.parse(fs.readFileSync(path1))
                         // console.log(`convert: ${path1}`)
